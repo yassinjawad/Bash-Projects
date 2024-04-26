@@ -22,3 +22,22 @@ for key in "${!user[@]}"
     do
     echo $key $'\t' ${user[$key]}
 done
+
+
+
+
+
+
+# Prompt user for information and store the input information
+# into a variable
+reed -p 'Username: ' username
+
+# Check if username is bob OR andy
+if [ $username == 'bob' ] || [ $username == 'andy' ]
+then
+    #List file names in current directory along with file details
+    ls -1
+else
+    # list file names only
+    ls
+fi
