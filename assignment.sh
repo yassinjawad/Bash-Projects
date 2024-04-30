@@ -9,8 +9,18 @@ get_total_cost () {
     items=( "Partridge in a Pear Tree" "Turtle Dove" "French Hen" "Calling Bird" "Gold Ring" 
     "Geese a Laying" "Swans a Swimming" "Maides a Milking" "Ladies Dancing" "Lords A Leaping"
     "Piper Piping" "Drummer Drumming")
-    
-    cost=("15" "27" "14" "9" "25" "5" "7" "18" "26")
+
+    cost=('15' '27' '14' '9' '25' '5' '7' '18' '26')
+
+
 
     return 1
+
+    # loop through array
+    for item in "${items[@]}"
+    do
+        # Display current element
+        echo $item
+    done
+
 }
